@@ -1,0 +1,41 @@
+{
+  "name": "now-preact-ssr",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run babel-node server.js ",
+    "build": "preact build --template src/template.html",
+    "serve": "preact build && sirv build --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint src",
+    "copy_manifest": "cp manifest.json build/manifest.json && cp -R assets build/"
+  },
+  "eslintConfig": {
+    "extends": "preact"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-preact": "^2.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-preact": "^1.1.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.0",
+    "ignore-styles": "^5.0.1",
+    "preact-cli": "^3.0.0-rc.9",
+    "sirv-cli": "^0.4.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bulma": "^0.8.2",
+    "preact": "^10.1.0",
+    "preact-render-to-string": "^5.1.4"
+  }
+}

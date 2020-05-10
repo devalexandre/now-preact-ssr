@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "express-now",
+  "builds": [
+    {"src": "index.js", "use": "@now/node"},
+    { "src": "./build/**", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "index.js" },
+    { "src": "/(.*)", "dest": "build/$1" }
+  ],
+  "env": {
+    "VERSION": "@version"
+  }
+}
+
+

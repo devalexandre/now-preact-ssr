@@ -24,7 +24,7 @@
     "babel-plugin-css-modules-transform": "^1.6.2",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-preset-preact": "^2.0.0",
-    "eslint": "^6.0.1",
+    "eslint": "^9.32.0",
     "eslint-config-preact": "^1.1.0",
     "express": "^4.17.1",
     "if-env": "^1.0.0",
